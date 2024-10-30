@@ -70,7 +70,7 @@ The **Learning** component involves training the HMM parameters using the Baum-W
 To train the model parameters using the Baum-Welch algorithm, run:
 
 ```bash
-python Baum\ Welch.py
+python Baum Welch.py
 ```
 
 ## Usage
