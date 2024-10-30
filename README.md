@@ -31,6 +31,7 @@ To calculate the likelihood, execute the following command in the terminal:
 
 ```bash
 python Likelihood.py
+```
 
 ## Usage
 
