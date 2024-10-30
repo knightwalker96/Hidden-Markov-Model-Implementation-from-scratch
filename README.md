@@ -1,21 +1,22 @@
-# HMM Trajectory Analysis Project
-
+# Sailboat Gridworld Trajectory Analysis using Hidden Markov Models
 This project focuses on analyzing trajectories using Hidden Markov Models (HMMs) through three core components: **Likelihood Calculation**, **Decoding**, and **Learning**. Each component corresponds to specific stages of HMM-based analysis and can be run independently.
 
 ## Project Structure
 
-The project directory contains the following main files and folders:
+- **Heatmaps/**: Contains heatmaps generated during trajectory analysis.
+- **compare_trajectories/**: Includes scripts to compare original and decoded trajectories.
+- **trajectories/**: Contains sample trajectory data files.
+- **Baum Welch.py**: Implementation of the Baum-Welch algorithm for HMM parameter optimization.
+- **Decoding.py**: Contains the Viterbi decoding algorithm for observation sequence decoding.
+- **Likelihood.py**: Code to compute the likelihood of observed sequences given the model parameters.
+- **Sampling.py**: Script for generating trajectory samples based on model parameters.
+- **assignment 1.pdf**: The assignment guidelines for this project.
+- **model_parameters.json**: JSON file containing initial model parameters, such as transition and emission probabilities.
+- **notebook.ipynb**: Jupyter notebook with exploratory analysis, results, and visualizations.
+- **report.pdf**: Detailed report of the project, methodology, and results.
+- **trajectory_data.json**: Sample trajectory data used for HMM training and testing.
+- **utils.py**: Utility functions used across different modules, including data preprocessing and visualization.
 
-- `Baum Welch.py`: Implements the HMM learning algorithm (Baum-Welch).
-- `Decoding.py`: Performs trajectory decoding using the Viterbi algorithm.
-- `Likelihood.py`: Calculates the likelihood of observed trajectories given the HMM parameters.
-- `Sampling.py`: Generates and samples trajectories based on a trained HMM.
-- `model_parameters.json`: Stores initial model parameters for HMM.
-- `trajectory_data.json`: Contains observed trajectory data.
-- `Heatmaps/`: Folder containing visualizations of the decoded trajectories.
-- `compare_trajectories/`: Folder for visual comparisons between original and decoded trajectories.
-
-Additional folders and files support the analysis, including generated heatmaps, trajectory comparisons, and utility functions.
 
 ---
 
@@ -50,6 +51,7 @@ The **Decoding** component uses the Viterbi algorithm to determine the most like
 To perform decoding using the Viterbi algorithm, execute:
 ```bash
 python Decoding.py
+```
 
 ## Usage
 
@@ -66,8 +68,10 @@ The **Learning** component involves training the HMM parameters using the Baum-W
 
 ### How to Run
 To train the model parameters using the Baum-Welch algorithm, run:
+
 ```bash
 python Baum\ Welch.py
+```
 
 ## Usage
 
@@ -78,8 +82,10 @@ This script uses `trajectory_data.json` as input data and updates the parameters
 ## Additional Information
 
 - **`Sampling.py`**: Generates synthetic trajectories based on the trained HMM. You can run this script with:
+  
   ```bash
   python Sampling.py
+  ```
 
 ### Visualizations
 
