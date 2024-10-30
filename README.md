@@ -29,6 +29,7 @@ The **Likelihood** component calculates the probability (likelihood) of an obser
 ### How to Run
 To calculate the likelihood, execute the following command in the terminal:
 
+```python
 python Likelihood.py
 
 ## Usage
